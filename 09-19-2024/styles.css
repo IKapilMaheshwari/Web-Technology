@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eaf3f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.semi-circle {
+    position: absolute;
+    z-index: -1;
+}
+
+.semi-circle img {
+    height: 800px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-left: -450px;
+    /* margin: -200px 0; */
+}
+
+.ticket-form {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+.name-group input {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.ticket-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.ticket-item {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    margin-top: 5px;
+}
+.ticket-item-title {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.ticket-item-title span {
+    font-weight: bold;
+    color: #778;
+    
+}
+
+.ticket-item input {
+    width: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #d1475f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bf3a4b;
+}
+
+.ticket-item p {
+    margin: 0;
+    font-size: 0.7rem;
+    color: #777;
+}
+
+.name-group-title {
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 5px;
+    margin-left: -105px;
+    margin-right: -10px;
+}
+
+.name-group-title p {
+    color: #778;
+    font-size: .7rem;
+}

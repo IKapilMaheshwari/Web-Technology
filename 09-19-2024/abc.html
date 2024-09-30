@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="semi-circle">
+        <img src="./images/semi-circle.png" alt="">
+    </div>
+    <div class="form-container">
+        <form class="ticket-form">
+            <div class="logo">
+                <h1>ZEMR</h1>
+            </div>
+            <h2>Ticket Order Form</h2>
+            <div class="input-group">
+                <label for="first-name">Name</label>
+                <div class="name-group">
+                    <input type="text" id="first-name">
+                    <input type="text" id="last-name">
+                </div>
+                <div class="name-group-title">
+                    <p>First Name</p>
+                    <p class="p2">Last Name</p>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="ticket-group">
+                <div class="ticket-item-title">
+                    <label>Adult Ticket</label>
+                    <span>$15</span>
+                </div>
+                <div class="ticket-item">
+                    <p>Quantity:</p>
+                </div>
+                <div class="ticket-item">
+                    
+                    <input type="number" min="0">
+                </div>
+            </div>
+            <div class="ticket-group">
+                <div class="ticket-item-title">
+                    <label>Child Ticket</label>
+                    <span>$8</span>
+                </div>
+                <div class="ticket-item">
+                    <p>Quantity:</p>
+                </div>
+                <div class="ticket-item">
+                    <input type="number" min="0">
+                </div>
+            </div>
+            <div class="ticket-group">
+                <div class="ticket-item-title">
+                    <label>Senior Ticket</label>
+                    <span>$5</span>
+                </div>
+                <div class="ticket-item">
+                    <p>Quantity:</p>
+                </div>
+                <div class="ticket-item">
+                    <input type="number" min="0">
+                </div>
+            </div>
+            <button type="submit">Continue to Payment</button>
+        </form>
+    </div>
+</body>
+
+</html>

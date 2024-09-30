@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms in HTML</title>
+    <style>
+        div{
+            margin: 0px auto;
+            max-width: fit-content;
+        }
+        h1{
+            text-align: center;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div  id="container">
+        <h1>Forms</h1>
+        <br><br>
+    <form action="abc.jsp" method="get|post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="age" >Age:</label>
+        <input type="number" name="age" placeholder="Enter Age" id="age" min="10" max="100">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="file">File:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <label for="hobby">Hobby:</label>
+        <input type="checkbox" name="hobby" id="hobby" value="cricket">Cricket
+        <input type="checkbox" name="hobby" id="hobby" value="football">Football
+        <input type="checkbox" name="hobby" id="hobby" value="hockey">Hockey
+        <br><br>
+        <label for="gender">Gender</label>
+        
+        <br><br>
+        <label for="lang">Language:</label>
+        <select name="lang" id="lang">
+            <option value="java">Java</option>
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="python">Python</option>
+        </select>
+        <br><br>
+        <input type="submit" name="submit" id="submit">
+        <br><br>
+        <input type="reset" name="reset" value="Clear">
+        
+    </form>
+    <br><br>
+</div>
+    <br><br>
+    <div>
+        <br><br>
+    <form action="abc.jsp" method="get|post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <label for="file">File:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <label for="range">Range:</label>
+        <input type="range" name="range" id="range">
+        <br><br>
+        <label for="number">Number:</label>
+        <input type="number" name="number" id="number">
+        <br><br>
+        <label for="tel">Tel:</label>
+        <input type="tel" name="tel" id="tel">
+        <br><br>
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url">
+        <br><br>
+        <label for="search">Search:</label>
+        <input type="search" name="search" id="search">
+        <br><br>
+        <label for="time">Time:</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <label for="week">Week:</label>
+        <input type="week" name="week" id="week">
+        <br><br>
+        <label for="month">Month:</label>
+        <input type="month" name="month" id="month">
+        <br><br>
+        <label for="datetime-local">Datetime-local:</label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+    <br><br>
+</div>
+</body>
+</html>
