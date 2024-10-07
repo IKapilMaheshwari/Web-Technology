@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     emp ={
+    //         empId: 101,
+    //         name: "kapil",
+    //         age: 25,
+    //         salary: 50000,
+    //         address: {
+    //             city: "Delhi",
+    //             state: "Delhi",
+    //             pin: 110085
+    //         },
+    //         showInfo: function(){
+    //             console.log(`Name: ${this.name}`);
+    //             console.log(`Age: ${this.age}`);
+    //             console.log(`Salary: ${this.salary}`);
+    //             console.log(`City: ${this.address.city}`);
+    //             console.log(`State: ${this.address.state}`);
+    //             console.log(`Pin: ${this.address.pin}`);
+    //         }
+    //     }
+    //     document.write(emp.empId + emp.name);
+    // var emp = new Object();
+    // emp.empId = 101;
+    // emp.name = "kapil";
+    // emp.salary = 50000;
+    // document.write(emp.empId +" "+ emp.name +" "+ emp.salary);
+    function emp(empId, name, salary){
+        this.empId = empId;
+        this.name = name;
+        this.salary = salary;
+    }
+    e = new emp(101, "kapil", 50000);
+    document.write(e.empId + " " + e.name + " " + e.salary);
+    </script>
+</body>
+</html>

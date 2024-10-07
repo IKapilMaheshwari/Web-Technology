@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="num1" id="num1">
+        <input type="text" name="num2" id="num2">
+        <button type="button" id="button">Sum</button>
+        <p id="pid">Result</p>
+    </form>
+        <script>
+            let btn = document.getElementById("button");
+            btn.addEventListener("click",sum);
+            function sum() {
+                let num1 = document.getElementById("num1").value;
+                let num2 = document.getElementById("num2").value;
+                let pid = document.getElementById("pid");
+                pid.innerHTML = parseInt(num1) + parseInt(num2);
+            }
+        </script>
+</body>
+</html>

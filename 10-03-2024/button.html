@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pid">This is p Tag in HTML</p>
+    <button type="button" id="button">Show Result</button>
+    <script>
+        // let btn = document.getElementById("button").addEventListener("click",changeP);
+        let btn = document.getElementById("button");
+        btn.addEventListener("mouseover",changeP1);
+        function changeP() {
+            let pid = document.getElementById("pid");
+            pid.innerHTML="<h2>This is changed by JS Button</h2>";
+        }
+        function changeP1() {
+            let pid = document.getElementById("pid");
+            pid.innerHTML="<h2 >This is changed by JS Button 2</h2>";
+        }
+        document.getElementsByTagName("button")[0].addEventListener("click",changeP);
+        document.getElementsByTagName("p")[0].addEventListener("hover",changeP1);
+    </script>
+</body>
+</html>

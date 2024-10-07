@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="showInfo()" id="btn">Open</button>
+</body>
+<script>
+    function showInfo() {
+        let pathName = window.location.pathname;
+        let hostName = window.location.hostname;
+        let protocol = window.location.protocol;
+        let href = window.location.href;
+        let port = window.location.port;
+        let origin = window.location.origin;
+        let search = window.location.search;
+        let hash = window.location.hash;
+        // let assign = window.location.assign("https://www.google.com");
+        let back = window.history.back();
+        let forward = window.history.forward();
+        // let reload = window.location.reload();
+        // let replace = window.location.replace("https://www.google.com");
+        // let pathname = window.location.pathname;
+        // let hostname = window.location.hostname;
+        
+        alert(pathName);
+        alert(hostName);
+        alert(protocol);
+        alert(href);
+        alert(port);
+        alert(origin);
+        alert(search);
+        alert(hash);
+        alert(assign);
+        // alert(reload);
+        // alert(replace);
+        // alert(pathname);
+        // alert(hostname);
+
+    }
+</script>
+</html>

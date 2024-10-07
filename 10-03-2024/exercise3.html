@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="num">
+        <button type="button" id="button">Generate Table</button>
+        <table border="1" id="table">
+            <tr>
+                <th>Multiply By</th>
+                <th>Result</th>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let btn = document.getElementById("button");
+        btn.addEventListener("click", genTable);
+        function genTable() {
+            let num = document.getElementById("num").value;
+            let table = document.getElementById("table");
+            for (let i = 1; i <= 10; i++) {
+                let tr = document.createElement("tr");
+                let td1 = document.createElement("td");
+                let td2 = document.createElement("td");
+                td1.innerHTML = i;
+                td2.innerHTML = num * i;
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                table.appendChild(tr);
+            }
+        }
+    </script>
+</body>
+
+</html>

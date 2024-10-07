@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Pvalue"></p>
+    
+</body>
+<script>
+    let a=document.getElementById("Pvalue");
+    let array = [
+        {
+            id:1,
+            name:'Kapil',
+        },
+        {
+            id:2,
+            name:'Disha',
+        },
+        {
+            id:3,
+            name:'Rahul',
+        },
+        {
+            id:4,
+            name:'Rohit',
+        },
+        {
+            id:5,
+            name:'Raj',
+        },
+    ]
+    array.forEach(function abc(value){
+        a.innerHTML+=`Value: ${value["name"]} ${value.id}<br>`;
+    })
+
+</script>
+</html>
